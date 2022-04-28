@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>商品更新</title>
+</head>
+<body>
+	<h2>商品更新</h2>
+	<form action="/spring_practice/item/updateComplete" method="post">
+	
+		<label>ID：
+			<input type="number" name="id" />
+		</label><br />
+		<label>商品名：
+			<input type="text" name="name" />
+		</label><br />
+		<label>価格：
+			<input type="number" name="price" />
+		</label><br />
+		
+		<label><input type="submit" value="更新" /></label>
+	
+	</form>
+
+</body>
+</html>

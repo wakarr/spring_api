@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>管理ユーザー登録</title>
+</head>
+<body>
+	<h2>管理ユーザー登録</h2>
+	<form action="/spring_practice/registAdmin" method="post">
+		<label>名前：
+			<input type="text" name="admin" />
+		</label>
+		<label><input type="submit" value="登録" /></label>
+	</form>
+	
+	<p>以下のリンクから管理ユーザーの解除が行えます。</p>
+	<a href="/spring_practice/deleteAdmin">管理ユーザー解除</a>
+
+</body>
+</html>

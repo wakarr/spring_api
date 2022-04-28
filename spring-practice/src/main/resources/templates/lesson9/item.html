@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>商品[[${item.id}]]：[[${item.name}]]</title>
+</head>
+<body>
+
+	<p>商品ID:<span th:text="${item.id}"></span></p>
+	<p>商品名:<span th:text="${item.name}"></span></p>
+	<p>価格:<span th:text="${item.price}"></span></p>
+</body>
+</html>

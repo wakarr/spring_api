@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>管理ユーザー登録完了</title>
+</head>
+<body>
+	<p><span th:text="${session.admin}"></span>さんは管理ユーザーになりました。</p>
+	<p>以下リンクから商品登録が行えます。</p>
+	<a href="/spring_practice/inputItem">商品登録</a>
+</body>
+</html>

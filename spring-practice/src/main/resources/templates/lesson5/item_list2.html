@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商品一覧</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>商品名</th>
+		</tr>
+		<tr th:each="item : ${session.itemList}">
+			<td th:text="${item}"></td>
+		</tr>
+	</table>
+	
+	<a href="/spring_practice/inputItem">さらに追加</a>
+
+</body>
+</html>

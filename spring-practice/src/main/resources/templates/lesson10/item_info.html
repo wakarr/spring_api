@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>商品管理</title>
+<script th:src="@{/js/item.js}"></script>
+<script>onloat = getItem()</script>
+</head>
+<body>
+	<h3>商品一覧</h3>
+	
+	<table id="itemList">
+		<tr>
+			<th>ID</th>
+			<th>名前</th>
+			<th>価格</th>
+			<th>カテゴリー名</th>
+		</tr>
+	</table>
+	
+	<h3>商品編集</h3>
+	<form name="regist">
+	
+		<label>商品ID：
+			<input type="number" name="id" />
+		</label><br />
+		<label>商品名：
+			<input type="text" name="name" />
+		</label><br />
+		<label>価格：
+			<input type="number" name="price" />
+		</label><br />
+		<label>カテゴリー：
+			<select name="categoryId">
+				<option value="1">書籍</option>
+				<option value="2">音楽</option>
+				<option value="3">家電</option>
+			</select>
+		</label><br />
+		
+		<input type="submit" value="登録" onClick="registItem()" />
+		<input type="submit" value="更新" onClick="updateItem()"/>
+		<input type="submit" value="削除" onClick="deleteItem()"/>
+	</form>
+
+</body>
+</html>

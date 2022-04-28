@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>商品一覧</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>名前</th>
+			<th>価格</th>
+		</tr>
+		<tr th:each="item : ${itemList}">
+			<td th:text="${item.id}">
+			<td th:text="${item.name}">
+			<td th:text="${item.price}">
+		</tr>
+	</table>
+	
+	<br />
+	<a href="/spring_practice/item/registInput">商品登録</a>
+	<a href="/spring_practice/item/updateInput">商品更新</a>
+	<a href="/spring_practice/item/deleteInput">商品削除</a>
+
+</body>
+</html>
